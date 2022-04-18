@@ -118,20 +118,20 @@
   text-transform: uppercase;
   margin-left: 45px;
 }
+
 .button:hover {
   background-color: var(--color-orange);
   border: 2px var(--color-orange) solid;
   color: white;
 }
 
-/* looks like the button bellow is styled with the reversed colours */
 .button--cta {
-  padding: 12px 22px;
-  height: 55px;
   background-color: var(--color-orange);
   color: white;
-  text-transform: uppercase;
   font-size: 1.1rem;
+  height: 55px;
+  padding: 12px 22px;
+  text-transform: uppercase;
 }
 .button--cta:hover {
   background-color: white;
@@ -165,19 +165,54 @@
 
 .container {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .container--card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  min-width: 30%;
+  min-height: 375px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  background-position: center;
+  background-size: cover;
 }
 
-.container--card:hover {
+.container--card--toys {
+  background-image: url(./images/01.jpg);
+}
+.container--card--rest {
+  background-image: url(./images/02.jpg);
+}
+.container--card--walks {
+  background-image: url(./images/03.jpg);
+}
+
+.container--card .container--card-texts {
+  visibility: hidden;
+}
+.container--card:hover .container--card-texts {
+  visibility: visible;
 }
 
 /* TODO: Row reverse so the h3 comes before… but is declared after in the html */
 .container--card-h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding-top: 8px;
 }
 
-.container--card-h3 {
+.container--card-p {
+  padding-bottom: 8px;
+  /* font-size: 1.1rem; */
+  text-transform: uppercase;
 }
 
 /* 
