@@ -72,30 +72,40 @@
 .menu--secondary {
   /* TODO: Make this visible
   display: flex;  */
+  background-color: white;
+  color: black;
   display: none;
   flex-direction: column;
+  line-height: 2.5rem;
+  /* margin-top: 10px; */
+  margin-left: -18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 15px;
   position: absolute;
-  margin-top: 10px;
-  margin-left: -15px;
-  padding-left: 15px;
-  background-color: white;
-  transition: all 0.5s ease;
-  line-height: 2rem;
   text-align: left;
 }
 
+.menu--item:hover .menu--secondary {
+  /* transition: all 3s ease; */
+  display: flex;
+  color: black;
+}
+
 .menu--secondary:hover {
+  color: var(--color-orange);
 }
 
 .menu--item-secondary {
+  border-bottom: 1px solid #00000025;
 }
 
-.link {
-  /* color: black; */
+.menu--item-secondary:hover {
+  color: var(--color-orange);
 }
 
-.link:hover {
-  /* color: var(--color-orange) */
+.menu--item-secondary:first-child {
+  padding-top: 10px;
 }
 
 .logo {
@@ -171,13 +181,14 @@
   margin-top: 30px;
 }
 
+/* TODO: Improve responsive behaviour */
 .container--card {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
   min-width: 30%;
-  min-height: 375px;
+  min-height: 350px;
   border-radius: 30px;
   text-align: center;
   color: white;
@@ -214,30 +225,3 @@
   /* font-size: 1.1rem; */
   text-transform: uppercase;
 }
-
-/* 
-    <main class="wrapper">
-      <h1 class="wrapper--h1">Take a closer look</h1>
-      <button class="button--reverse">View all</button>
-      <section class="container">
-        <div class="container--card">
-          <hgroup>
-            <h2 class="container--card-h2">Toys Playtime</h2>
-            <h3 class="container--card-h3">Activities</h3>
-          </hgroup>
-        </div>
-        <div class="container-card">
-          <hgroup>
-            <h2 class="container--card-h2">Active Rest</h2>
-            <h3 class="container--card-h3">Activities</h3>
-          </hgroup>
-        </div>
-        <div class="container-card">
-          <hgroup>
-            <h2 class="container--card-h2">Game Walks</h2>
-            <h3 class="container--card-h3">Activities</h3>
-          </hgroup>
-        </div>
-      </section>
-
-*/
