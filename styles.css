@@ -70,26 +70,21 @@
 }
 
 .menu--secondary {
-  display: flex;
+  /* TODO: Make this visible
+  display: flex;  */
+  display: none;
   flex-direction: column;
   position: absolute;
   margin-top: 10px;
   margin-left: -15px;
   padding-left: 15px;
   background-color: white;
-  /* padding: 20px; */
   transition: all 0.5s ease;
   line-height: 2rem;
   text-align: left;
-  /* left: -20px; */
-  /* margin-top: 1rem; */
-  /* left: 0; */
 }
 
 .menu--secondary:hover {
-  /* visibility: visible;
-  opacity: 1; */
-  /* display: block; */
 }
 
 .menu--item-secondary {
@@ -113,13 +108,13 @@
   background-color: white;
   /* height: 30px; */
   border: 2px var(--color-orange) solid;
-  border-radius: 0px 20px 20px 20px;
+  /* border-radius: 0px 25px 25px 25px; */
+  border-radius: 0px 30px 30px 30px;
   color: white;
   font-size: 1rem;
   padding: 10px 17px;
   line-height: normal;
   color: black;
-
   text-transform: uppercase;
   margin-left: 45px;
 }
@@ -130,20 +125,46 @@
 }
 
 /* looks like the button bellow is styled with the reversed colours */
-.button--reverse {
+.button--cta {
+  padding: 12px 22px;
+  height: 55px;
+  background-color: var(--color-orange);
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
 }
-.button--reverse:hover {
+.button--cta:hover {
+  background-color: white;
+  border: 2px var(--color-orange) solid;
+  color: var(--color-orange);
 }
 
 /* main */
 .wrapper {
-  display: flex;
+  /* display: flex; */
+  padding: 70px 60px;
 }
 
-.wrapper-h1 {
+.wrapper--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper--h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.wrapper--p {
+  font-size: 1.2rem;
+  color: var(--color-orange);
+  text-transform: uppercase;
 }
 
 .container {
+  width: 100%;
 }
 
 .container--card {
