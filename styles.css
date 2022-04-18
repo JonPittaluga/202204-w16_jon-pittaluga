@@ -1,0 +1,181 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --color-orange: rgb(237, 100, 57);
+}
+
+.extrabold {
+  font-weight: 900;
+}
+
+/* .button {
+  background-color: white;
+  height: 30px;
+  border: 2px orange solid;
+  border-radius: 0px 20px 20px 20px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px;
+  line-height: normal;
+  color: black;
+} */
+
+/*** 
+    ======= BEM CLASSES FROM THE TEMPLATE ======= 
+***/
+
+.header {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  box-shadow: 0px 3px 10px #00000025;
+  /* padding: 2% 4%; */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 5px;
+}
+
+.menu--main {
+  font-size: 1.1rem;
+  display: flex;
+  line-height: 4.5rem;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.menu--item .menu--secondary {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+.menu-item:hover .menu--secondary {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+/* displays the submenu */
+
+.menu--item {
+  margin-left: 45px; */
+  height: 100%;
+  border-bottom: 3px rgba(0, 0, 0, 0) solid;
+  color: black;
+  /* width: 50px; */
+}
+
+.menu--item:hover {
+  border-bottom: 3px var(--color-orange) solid;
+  color: var(--color-orange)
+}
+
+.menu--item-secondary {
+}
+
+.link {
+  /* color: black; */
+}
+
+.link:hover{
+  /* color: var(--color-orange) */
+}
+
+.logo {
+  padding: 15px 40px;
+  /* width: 60px;
+  height: 60px; */
+}
+
+.button {
+  background-color: white;
+  /* height: 30px; */
+  border: 2px var(--color-orange) solid;
+  border-radius: 0px 20px 20px 20px;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 17px;
+  line-height: normal;
+  color: black;
+
+  text-transform: uppercase;
+  margin-left: 45px;
+}
+.button:hover {
+  background-color: var(--color-orange);
+  border: 2px var(--color-orange) solid;
+  color: white;
+}
+
+/* looks like the button bellow is styled with the reversed colours */
+.button--reverse {
+}
+.button--reverse:hover {
+}
+
+/* main */
+.wrapper {
+  display: flex;
+}
+
+.wrapper-h1 {
+}
+
+.container {
+}
+
+.container--card {
+}
+
+.container--card:hover {
+}
+
+/* TODO: Row reverse so the h3 comes before… but is declared after in the html */
+.container--card-h2 {
+}
+
+.container--card-h3 {
+}
+
+/* 
+    <main class="wrapper">
+      <h1 class="wrapper--h1">Take a closer look</h1>
+      <button class="button--reverse">View all</button>
+      <section class="container">
+        <div class="container--card">
+          <hgroup>
+            <h2 class="container--card-h2">Toys Playtime</h2>
+            <h3 class="container--card-h3">Activities</h3>
+          </hgroup>
+        </div>
+        <div class="container-card">
+          <hgroup>
+            <h2 class="container--card-h2">Active Rest</h2>
+            <h3 class="container--card-h3">Activities</h3>
+          </hgroup>
+        </div>
+        <div class="container-card">
+          <hgroup>
+            <h2 class="container--card-h2">Game Walks</h2>
+            <h3 class="container--card-h3">Activities</h3>
+          </hgroup>
+        </div>
+      </section>
+
+*/

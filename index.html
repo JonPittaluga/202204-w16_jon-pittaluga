@@ -14,52 +14,61 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,900;1,800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/b197fc2563.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <img src="./images/logo2.png" alt="" class="logo" />
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>
-            <a href="#">Live Demo <i>dropdown icon</i></a>
-            <ul>
-              <li>Pets Boarding Services</li>
-              <li>Pets Toys and Food Shop</li>
-              <li>Pets Training School</li>
+      <nav class="menu">
+        <ul class="menu--main">
+          <li class="menu--item">Home</li>
+          <li class="menu--item">
+            <a href="#" class="link"
+              >Live Demo <i class="fa-solid fa-caret-down dropdown"></i
+            ></a>
+
+            <ul class="menu--secondary">
+              <li class="menu--item-secondary">Pets Boarding Services</li>
+              <li class="menu--item-secondary">Pets Toys and Food Shop</li>
+              <li class="menu--item-secondary">Pets Training School</li>
             </ul>
           </li>
-          <li>
-            <a href="#">Live Demo Blocks <i>dropdown icon</i> </a>
-            <ul>
-              <li>Recyclable Poo Bags</li>
-              <li>Random Pets Stuff</li>
+          <li class="menu--item">
+            <a href="#" class="link"
+              >Live Demo Blocks <i class="fa-solid fa-caret-down dropdown"></i>
+            </a>
+            <ul class="menu--secondary">
+              <li class="menu--item-secondary">Recyclable Poo Bags</li>
+              <li class="menu--item-secondary">Random Pets Stuff</li>
             </ul>
           </li>
-          <li><button>Buy now</button></li>
+          <li><button class="button">Buy now</button></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Take a closer look</h1>
-      <button class="button">View all</button>
+    <main class="wrapper">
+      <h1 class="wrapper--h1">Take a closer look</h1>
+      <button class="button--reverse">View all</button>
       <section class="container">
-        <div class="activity-card">
+        <div class="container--card">
           <hgroup>
-            <h2>Toys Playtime</h2>
-            <h3>Activities</h3>
+            <h2 class="container--card-h2">Toys Playtime</h2>
+            <h3 class="container--card-h3">Activities</h3>
           </hgroup>
         </div>
-        <div class="activity-card">
+        <div class="container-card">
           <hgroup>
-            <h2>Active Rest</h2>
-            <h3>Activities</h3>
+            <h2 class="container--card-h2">Active Rest</h2>
+            <h3 class="container--card-h3">Activities</h3>
           </hgroup>
         </div>
-        <div class="activity-card">
+        <div class="container-card">
           <hgroup>
-            <h2>Game Walks</h2>
-            <h3>Activities</h3>
+            <h2 class="container--card-h2">Game Walks</h2>
+            <h3 class="container--card-h3">Activities</h3>
           </hgroup>
         </div>
       </section>
